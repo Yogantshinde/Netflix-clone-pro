@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Netflix Clone Pro
+</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h2>NETFLIX</h2>
+
+<ul>
+
+<li>
+<a href="#">
+<i class="fa-solid fa-house"></i>
+Home
+</a>
+</li>
+
+<li>
+<a href="#">
+<i class="fa-solid fa-film"></i>
+Movies
+</a>
+</li>
+
+<li>
+<a href="#">
+<i class="fa-solid fa-heart"></i>
+Watchlist
+</a>
+</li>
+
+<li>
+<a href="#">
+<i class="fa-solid fa-chart-line"></i>
+Dashboard
+</a>
+</li>
+
+<li>
+<a href="#"
+onclick="logout()">
+<i class="fa-solid fa-right-from-bracket"></i>
+Logout
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<!-- Main Content -->
+
+<div class="main-content">
+
+<!-- Top Navbar -->
+
+<div class="topbar">
+
+<h2 id="welcomeUser">
+Welcome User
+</h2>
+
+<div class="top-actions">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search Movie...">
+
+<button id="themeToggle">
+🌙
+</button>
+
+</div>
+
+</div>
+
+<!-- Hero Banner -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+Unlimited Movies,
+TV Shows & More
+</h1>
+
+<p>
+Watch Anywhere.
+Cancel Anytime.
+</p>
+
+<button>
+Watch Now
+</button>
+
+</div>
+
+</section>
+
+<!-- Dashboard Cards -->
+
+<section class="dashboard">
+
+<div class="card">
+
+<h3 id="totalMovies">
+0
+</h3>
+
+<p>
+Total Movies
+</p>
+
+</div>
+
+<div class="card">
+
+<h3 id="watchlistCount">
+0
+</h3>
+
+<p>
+Watchlist
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+4.8
+</h3>
+
+<p>
+User Rating
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+24
+</h3>
+
+<p>
+Movies Watched
+</p>
+
+</div>
+
+</section>
+
+<!-- Category Buttons -->
+
+<section class="categories">
+
+<button
+class="category-btn active"
+data-category="all">
+All
+</button>
+
+<button
+class="category-btn"
+data-category="action">
+Action
+</button>
+
+<button
+class="category-btn"
+data-category="comedy">
+Comedy
+</button>
+
+<button
+class="category-btn"
+data-category="horror">
+Horror
+</button>
+
+<button
+class="category-btn"
+data-category="scifi">
+Sci-Fi
+</button>
+
+</section>
+
+<!-- Trending Movies -->
+
+<section class="movies-section">
+
+<h2>
+🔥 Trending Movies
+</h2>
+
+<div
+id="moviesContainer"
+class="movies-grid">
+
+</div>
+
+</section>
+
+<!-- Continue Watching -->
+
+<section class="movies-section">
+
+<h2>
+▶ Continue Watching
+</h2>
+
+<div
+id="continueWatching"
+class="movies-grid">
+
+</div>
+
+</section>
+
+<!-- Watchlist -->
+
+<section class="movies-section">
+
+<h2>
+❤️ My Watchlist
+</h2>
+
+<div
+id="watchlistContainer"
+class="movies-grid">
+
+</div>
+
+</section>
+
+</div>
+
+<!-- Movie Modal -->
+
+<div
+class="modal"
+id="movieModal">
+
+<div class="modal-content">
+
+<span class="close-btn">
+&times;
+</span>
+
+<img
+id="modalImage"
+src="">
+
+<h2
+id="modalTitle">
+</h2>
+
+<p
+id="modalGenre">
+</p>
+
+<p
+id="modalRating">
+</p>
+
+<p
+id="modalDescription">
+</p>
+
+<button
+id="addToWatchlist">
+Add To Watchlist
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
